@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shuhrat Komilov — Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Roboto+Mono&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header class="header">
+            <div class="container header-inner">
+                <div class="brand">
+                    <a href="#home">Shuhrat<span class="dot">.</span></a>
+                </div>
+                <nav class="nav" id="nav">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="controls">
+                    <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+                    <button id="menu-toggle" class="menu-toggle" aria-label="Open menu">☰</button>
+                </div>
+            </div>
+        </header>
+
+
+        <main>
+            <section id="home" class="hero" style="background-image: url('images/bg.jpg')">
+                <div class="container hero-inner">
+                    <div class="hero-left">
+                        <h1>Hello, I’m <span class="accent">Shuhrat</span></h1>
+                        <p class="lead">Front‑end Developer &amp; UI enthusiast. I build accessible, responsive,
+                            performant websites.</p>
+                        <div class="hero-actions">
+                            <a class="btn" href="#projects">My Work</a>
+                            <a class="btn btn-outline" href="#contact">Hire me</a>
+                        </div>
+                        <div class="meta">
+                            <span class="meta-item">📍 Urgench, Uzbekistan</span>
+                            <span class="meta-item">✉️
+                                <a href="mailto:youremail@example.com">shuhratk574@gmail.com</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="hero-right">
+                        <div class="avatar-wrap">
+                            <img src="https://image-processor-storage.s3.us-west-2.amazonaws.com/images/3cf61c1011912a2173ea4dfa260f1108/halo-of-neon-ring-illuminated-in-the-stunning-landscape-of-yosemite.jpg"
+                                alt="Avatar" class="avatar">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="section">
+                <div class="container">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="about-grid">
+                        <div class="about-text">
+                            <p>I’m a web developer building modern interfaces with HTML, CSS and JavaScript. I care
+                                about clean code, performance, and delightful UX. I enjoy learning new libraries and
+                                solving layout problems.</p>
+                            <p>I usually work with: <strong>HTML, CSS, JavaScript, React, Git</strong>. When I'm not
+                                coding — I take photos, read design blogs, and make small UI experiments.</p>
+                            <a class="btn" href="#contact">Contact me</a>
+                        </div>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <div class="stat-num">5+</div>
+                                <div class="stat-label">Years experience</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-num">20+</div>
+                                <div class="stat-label">Projects</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-num">100%</div>
+                                <div class="stat-label">Client satisfaction</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="skills" class="section alt">
+                <div class="container">
+                    <h2 class="section-title">Skills</h2>
+                    <div class="skills-grid">
+                        <div class="skill">
+                            <h3>HTML &amp; CSS</h3>
+                            <div class="skill-bar">
+                                <div style="--val:95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <h3>JavaScript</h3>
+                            <div class="skill-bar">
+                                <div style="--val:88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <h3>React</h3>
+                            <div class="skill-bar">
+                                <div style="--val:80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <h3>Accessibility</h3>
+                            <div class="skill-bar">
+                                <div style="--val:85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="projects" class="section">
+                <div class="container">
+                    <h2 class="section-title">Projects</h2>
+                    <div class="projects-filter">
+                        <button class="filter-btn active" data-filter="*">All</button>
+                        <button class="filter-btn" data-filter="web">Web</button>
+                        <button class="filter-btn" data-filter="ui">UI</button>
+                        <button class="filter-btn" data-filter="js">JS</button>
+                    </div>
+
+
+                    <div class="projects-grid" id="projectsGrid">
+                        <!-- Project Card -->
+                        <article class="project-card" data-type="web">
+                            <img src="./Images/Beats-by-Dre.png" alt="Project 1">
+                            <div class="project-body">
+                                <h3>Portfolio Website</h3>
+                                <p>Personal portfolio built with responsive layout and animations.</p>
+                                <div class="project-actions">
+                                    <button class="btn btn-sm" data-open="modal" data-title="Portfolio Website"
+                                        data-img="./Images/Beats-by-Dre.png"
+                                        data-desc="Responsive portfolio with lightbox and animations.">Preview</button>
+                                    <a class="btn btn-sm btn-outline" href="https://kshuha1012.github.io/Beats-by-Dre/" target="_blank">Live</a>
+                                </div>
+                            </div>
+                        </article>
+
+
+                        <article class="project-card" data-type="js">
+                            <img src="./Images/drum kit.png" alt="Project 2">
+                            <div class="project-body">
+                                <h3>ToDo App</h3>
+                                <p>Task manager with localStorage, filters and drag-and-drop.</p>
+                                <div class="project-actions">
+                                    <button class="btn btn-sm" data-open="modal" data-title="ToDo App"
+                                        data-img="./Images/drum kit.png"
+                                        data-desc="Task manager built with vanilla JS.">Preview</button>
+                                    <a class="btn btn-sm btn-outline" href="https://kshuha1012.github.io/Drum-Kit/" target="_blank">Live</a>
+                                </div>
+                            </div>
+                        </article>
+
+
+                        <article class="project-card" data-type="ui">
+                            <img src="./Images/calculator.png" alt="Project 3">
+                            <div class="project-body">
+                                <h3>Design Case Study</h3>
+                                <p>UI case study: user flows, high-fidelity mockups and prototype.</p>
+                                <div class="project-actions">
+                                    <button class="btn btn-sm" data-open="modal" data-title="Design Case Study"
+                                        data-img="./Images/calculator.png"
+                                        data-desc="UI case study with Figma prototype.">Preview</button>
+                                    <a class="btn btn-sm btn-outline" href="https://kshuha1012.github.io/Calculator/" target="_blank">Docs</a>
+                                </div>
+                            </div>
+                        </article>
+
+
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="section alt">
+                <div class="container">
+                    <h2 class="section-title">Contact</h2>
+                    <p class="center">Got a project? Let's chat — send me a message and I’ll reply as soon as possible.
+                    </p>
+
+
+                    <form id="contactForm" class="contact-form" novalidate>
+                        <div class="form-row">
+                            <label for="name">Name</label>
+                            <input id="name" name="name" type="text" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <div class="form-row form-actions">
+                            <button type="submit" class="btn">Send Message</button>
+                            <div id="formStatus" aria-live="polite" class="form-status"></div>
+                        </div>
+                    </form>
+
+
+                </div>
+            </section>
+        </main>
+
+
+        <footer class="footer">
+            <div class="container footer-inner">
+                <div>© <span id="year"></span> Shuhrat Komilov</div>
+                <div class="socials">
+                    <a href="https://www.linkedin.com/in/shuhrat-komilov-16678a391/" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/kshuha1012" target="_blank">GitHub</a>
+                    <a href="https://dribbble.com/shuhrat-komilov" target="_blank">Dribbble</a>
+                </div>
+            </div>
+        </footer>
+        <div id="modal" class="modal" aria-hidden="true">
+            <div class="modal-content" role="dialog" aria-modal="true">
+                <button id="modalClose" class="modal-close" aria-label="Close">×</button>
+                <div class="modal-body">
+                    <img id="modalImg" src="" alt="Preview">
+                    <div class="modal-info">
+                        <h3 id="modalTitle"></h3>
+                        <p id="modalDesc"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Mobile nav overlay -->
+        <div id="mobileNav" class="mobile-nav" aria-hidden="true">
+            <button id="mobileNavClose" class="mobile-close">×</button>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
